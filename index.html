@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap">
+    <title>Responsive CRUDS</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CRUDS</h1>
+            <P>Create Read Update Delete Search</P>
+        </header>
+        <form action="" target="_parent">
+            <input class="title" type="text" placeholder="Title" required maxlength="30">
+            <div class="revenue-cost">
+                <input class="price" type="number" placeholder="Price" required>
+                <input class="taxes" type="number" placeholder="Taxes" required>
+                <input class="ads" type="number" placeholder="ADS Cost" required>
+                <input class="discount" type="number" placeholder="Discount">
+                <input class="total" type="text" value="Total" readonly>
+            </div>
+            <input class="count" type="number" placeholder="Count" required>
+            <input class="catigory" type="text" placeholder="Catigory" required max="30">
+            <input class ="create-button" type="text" value="Create" readonly>
+        </form>
+        <div class="search">
+            <input type="text" placeholder="Search" maxlength="30">
+            <div class="search-by">
+                <span class="serch-by-title">Search By Title</span>
+                <span class="serch-by-catigory">Search By Catigory</span>
+            </div>
+        </div>
+        <table>
+            <caption>Delete All (<span class="count-products">0</span>)</caption>
+            <thead>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>CATIGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="/js/test.js"></script>
+</body>
+</html>
